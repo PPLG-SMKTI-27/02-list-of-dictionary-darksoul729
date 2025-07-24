@@ -13,13 +13,13 @@ for i in range(len(items)):
     print("Barang ke-",1+i,":", items[i]["nama"] , "\nstok : ", items[i]["stok"], '\n', "harga : ", items[i]["harga"], "\n")
 
 #fungsi create 
-
-nama = str(input("Masukkan Nama Barang : "))
-stok = int(input("Masukkan Jumlah Barang : "))
-harga = int(input("Masukkan Harga Barang : "))
-barang_baru = {"nama" : nama, "stok" : stok , "harga" : harga}
-items.append(barang_baru)
-print(tabulate(items, headers="firstrow", tablefmt="grid"))
-
+def create() :
+    nama = str(input("Masukkan Nama Barang : "))
+    stok = int(input("Masukkan Jumlah Barang : "))
+    harga = int(input("Masukkan Harga Barang : "))
+    barang_baru = {"nama" : nama, "stok" : stok , "harga" : harga}
+    items.append(barang_baru)
+    print(tabulate(items, headers="firstrow", tablefmt="grid"))
+create()
 
 
